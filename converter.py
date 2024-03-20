@@ -29,7 +29,7 @@ if len(sys.argv) != 3:
 filename = sys.argv[1]
 format = sys.argv[2]
 
-with open(filename, 'r') as file:
+with open(filename, 'r', encoding='latin-1') as file:
     data = [line.strip().split('\t') for line in file]
 
 if format == '-c':
